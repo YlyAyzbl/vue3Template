@@ -1,13 +1,14 @@
 <template>
   <div>
-    <header class="header">
+    <!--  <header class="header">
       <div>left</div>
       <div>center</div>
       <div>right</div>
     </header>
     <button @click="change(10)">小</button>
     <button @click="change(20)">中</button>
-    <button @click="change(30)">大</button>
+    <button @click="change(30)">大</button> -->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,12 +17,12 @@
 //任何页面都可使用
 //简单点
 // 使用vueUse库 npm i @vueuse/core
-import { useCssVar } from '@vueuse/core';
+//import { useCssVar } from '@vueuse/core';
 
-const change = (num: number) => {
+/* const change = (num: number) => {
   const size = useCssVar('--size');
   size.value = `${num}px`;
-}
+} */
 
 </script>
 <style scoped lang="less">
