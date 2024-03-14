@@ -4,3 +4,4 @@
 
 ## 注意： 该项目用于移动端开发
 ## 如果要用于pc段请禁用挂载的像素转换插件
+![](https://img.miaolme.com/file/68df6f07764fbfdf6ed1c.png)
