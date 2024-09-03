@@ -15,7 +15,7 @@ export const PostCsspxToViewport = (options: Options = Options): Plugin => {
             // px转vw
             // 设计稿375px
             // 有些px不需要转换 我需要转换就写成xl
-            if (node.value.includes('px')) { // 可改成自定义的如xl
+            if (node.value.includes('rpx')) { // 可改成自定义的如xl
                 const num = parseFloat(node.value); // 考虑到小数
                 node.value = `${((num / opt.viewportWidth) * 100).toFixed(2)}vw`
             }
